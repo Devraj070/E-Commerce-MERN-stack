@@ -1,0 +1,15 @@
+.testimonial-container{
+    text-align: center;
+    background-color: #E5E3F8;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+
+}
+
+.t-container-elements {
+    display: flex;
+    justify-content: flex-start; /* Align testimonials to the start */
+    flex-wrap: wrap;
+
+
+  }
+  

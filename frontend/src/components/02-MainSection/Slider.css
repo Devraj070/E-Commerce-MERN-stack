@@ -1,0 +1,89 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.slider-container {
+  /* margin-top: 42px; */
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  -webkit-transform: translate(-50%, -50%);
+  transition: all 0.9s ease;
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+}
+
+/* Add this style for the dots */
+.dots-container {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #000;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #fff; /* Change the active dot color to differentiate */
+}
+
+/* Read more button styles */
+.read-more-button {
+  z-index: 1;
+  position: absolute;
+  margin: 10vw;
+}
+
+.read-more-button p {
+  font-size: 30px;
+  color: white;
+  font-weight: 700;
+}
+
+
+.read-more-button button {
+  background-color: aquamarine;
+  color: #000;
+  border: none;
+  border-radius: 13px;
+  font-size: 20px;
+  padding: 8px 20px;
+  cursor: pointer;
+ 
+}
+.read-more-button button > a{
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+  .read-more-button p {
+      font-size: 20px;
+  }
+
+  .read-more-button button {
+      font-size: 16px;
+      padding: 6px 16px;
+  }
+}

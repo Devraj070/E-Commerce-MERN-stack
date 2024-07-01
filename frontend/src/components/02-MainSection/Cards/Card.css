@@ -1,0 +1,157 @@
+/* styles/Card.css */
+
+/* General container styles */
+.Big-card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  background-color: #95a766;
+  padding: 10px 20px 20px 20px;
+  height: 430px;
+  margin: 30px;
+  border-radius: 15px;
+}
+
+/* Header styles */
+.Big-card-container h3 {
+  display: flex;
+  position: absolute;
+  margin-top: 0px;
+  font-size: 25px;
+}
+
+/* Card container styles */
+.c1,
+.c2,
+.c3,
+.c4 {
+  background-color: green;
+  border-radius: 50px;
+  overflow: hidden;
+  height: 350px;
+  width: 100%;
+  padding: 0;
+  transition: transform 0.3s;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+/* Hover effect */
+.c1:hover,
+.c2:hover,
+.c3:hover,
+.c4:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Upper part of the card */
+.upper-c1,
+.upper-c2,
+.upper-c3,
+.upper-c4 {
+  height: 300px;
+  width: auto;
+}
+
+/* Lower part of the card */
+.lower-c1,
+.lower-c2,
+.lower-c3,
+.lower-c4 {
+  height: 50px;
+  width: auto;
+  background-color: green;
+  transition: transform 0.3s;
+}
+
+/* Move lower part up on hover */
+.c1:hover .lower-c1,
+.c2:hover .lower-c2,
+.c3:hover .lower-c3,
+.c4:hover .lower-c4 {
+  transform: translateY(-30px);
+}
+
+/* Image styles */
+.c1 img,
+.c2 img,
+.c3 img,
+.c4 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Text styles */
+.lower-c1 h2,
+.lower-c2 h2,
+.lower-c3 h2,
+.lower-c4 h2 {
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  padding: 8px;
+  padding-left: 20px;
+  font-size: 23px;
+}
+
+.lower-c1 p,
+.lower-c2 p,
+.lower-c3 p,
+.lower-c4 p {
+  color: white;
+  text-align: center;
+  padding-top: 3px;
+  font-size: 15px;
+}
+
+/* Link styles */
+.Big-card-container a,
+.Big-card-container a:visited,
+.Big-card-container a:hover,
+.Big-card-container a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 767px) {
+  .Big-card-container {
+    grid-template-columns: repeat(2, 1fr);
+    height: auto;
+    gap: 20px;
+    background-color: #D7CFB1;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 15px;
+  }
+
+  .c1,
+  .c2,
+  .c3,
+  .c4 {
+    height: auto;
+  }
+
+  .c1 .upper-c1,
+  .c2 .upper-c2,
+  .c3 .upper-c3,
+  .c4 .upper-c4 {
+    height: 200px;
+  }
+
+  .c1 .lower-c1,
+  .c2 .lower-c2,
+  .c3 .lower-c3,
+  .c4 .lower-c4 {
+    height: 40px;
+  }
+
+  /* Reset the hover effect */
+  .c1:hover .lower-c1,
+  .c2:hover .lower-c2,
+  .c3:hover .lower-c3,
+  .c4:hover .lower-c4 {
+    transform: translateY(0px);
+  }
+}

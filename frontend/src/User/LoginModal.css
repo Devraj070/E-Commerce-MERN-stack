@@ -1,0 +1,112 @@
+/* LoginModal.css */
+
+.l-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.l-modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 60vh;
+    max-width: 400px;
+    /* Limiting maximum width */
+}
+
+.l-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.l-modal-header h2 {
+    margin: 0;
+}
+
+.l-close-icon {
+    cursor: pointer;
+}
+
+/* Login.css */
+.l-form-group {
+    margin-bottom: 15px;
+}
+
+.l-form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.l-form-group input {
+    width: 100%;
+    /* Take up full width */
+    padding: 10px;
+    /* Reduce padding for a more compact look */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    /* Ensure padding is included in width calculation */
+}
+
+.l-login-button {
+    width: 100%;
+    /* Take up full width */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.l-login-button:hover {
+    background-color: #0056b3;
+}
+
+.l-forgot-password {
+    color: blue;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 2vh;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.l-font-size-signUp {
+    font-size: 15px;
+    margin-top: 15px;
+    text-align: center;
+    color: black;
+}
+
+.l-login,
+.l-username,
+.l-password {
+    color: black;
+}
+
+.l-login {
+    padding-left: 36%;
+}
+
+.l-sign-up {
+    color: blue;
+    cursor: pointer;
+
+}
+
+.l-sign-up a {
+    text-decoration: none;
+    color: #007bff;
+}
